@@ -7,7 +7,7 @@ import os
 app = FastAPI(title="Customer Churn Prediction API")
 
 # Load model and feature list
-BASE_DIR = os.path.dirname(os.path.abspath(_ _file_ _))
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 model = joblib.load(os.path.join(BASE_DIR, "churn_model.pkl"))
 features = joblib.load(os.path.join(BASE_DIR, "model_features.pkl"))
 
